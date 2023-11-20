@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;800&display=swap');
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 60%);
+    --graying-blue: hsl(217,18%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218,23%,16%);
+}
+
+.advice_holder_main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5pc;
+    margin: 5pc auto;
+    width: 30%;
+    min-width: 30pc;
+    padding: 1pc;
+    text-align: center;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 8px;
+
+}
+.advice_name, .advice_num {
+    color: var(--neon-green);
+    font-size: 12px;
+}
+
+.advice_box {
+    font-size: 28px;
+    color: var(--light-cyan);
+}
+
+.advice_btn_controller {
+    margin: auto;
+    background-color: var(--neon-green);
+    width: fit-content;
+    padding: 1pc;
+    border-radius: 100%;
+}
+
+
+.advice_btn_controller:hover {
+    box-shadow: 0 0 .666pc .3666pc var(--neon-green);
+}
+
+@media only screen and (max-width: 575px) {
+    .advice_holder_main {
+        width: 60%;
+        min-width: none;
+    }
+}
